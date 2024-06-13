@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ 
+  "title": {"text": "GDP Per Capita"},
+ 
+  "width": 800,
+  "height": 600,
+   
+  "data": {
+    "values": [
+        {"Country": "Switzerland","GDP per capita": 83598},
+        {"Country": "Philippines.","GDP per capita": 10133},
+        {"Country": "UK","GDP per capita": 54929},
+        {"Country": "India","GDP per capita": 8400},
+        {"Country": "Malta","GDP per capita": 55928},
+        {"Country": "Mali","GDP per capita": 2517}]
+  },
+ 
+  "mark": {
+    "type": "bar",
+    "color": "blueviolet"},
+ 
+  "encoding": {
+    "x": {"field": "Country"},  
+ 
+    "y": {
+      "field": "GDP per capita",
+      "type": "quantitative"}}
+}
+ 
